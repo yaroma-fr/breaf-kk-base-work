@@ -85,19 +85,12 @@ async function initAuthenticatedUserInfo() {
     }
 
     const user = authData.clientPrincipal;
-
     const userEmail = user.userDetails || "";
-    const userFullName = getUserFullNameFromClaims(user);
 
     const managerEmailInput = document.getElementById("managerEmail");
-    const managerNameInput = document.getElementById("managerName");
 
-    if (managerEmailInput && userEmail && !managerEmailInput.value) {
+    if (managerEmailInput && userEmail) {
       managerEmailInput.value = userEmail;
-    }
-
-    if (managerNameInput && userFullName && !managerNameInput.value) {
-      managerNameInput.value = userFullName;
     }
   } catch (error) {
     console.error("Failed to get authenticated user info:", error);
