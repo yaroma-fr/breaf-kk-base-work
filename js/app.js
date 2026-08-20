@@ -104,46 +104,6 @@ async function initAuthenticatedUserInfo() {
   }
 }
 
-function getUserFullNameFromClaims(user) {
-  if (!user || !Array.isArray(user.claims)) {
-    return "";
-  }
-
-  const fullName =
-    getClaimValue(user.claims, "name") ||
-    getClaimValue(user.claims, "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name");
-
-  if (fullName) {
-    return fullName;
-  }
-
-  const givenName =
-    getClaimValue(user.claims, "given_name") ||
-    getClaimValue(user.claims, "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname");
-
-  const surname =
-    getClaimValue(user.claims, "family_name") ||
-    getClaimValue(user.claims, "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname");
-
-  const combinedName = [givenName, surname].filter(Boolean).join(" ");
-
-  if (combinedName) {
-    return combinedName;
-  }
-
-  return "";
-}
-
-function getClaimValue(claims, claimType) {
-  const claim = claims.find(function (item) {
-    return item.typ === claimType;
-  });
-
-  return claim ? claim.val : "";
-}
-
-
-
 /* ================================
    DYNAMIC FIELDS
 ================================ */
