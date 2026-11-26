@@ -26,65 +26,65 @@
       <!-- MAIN FORM -->
       <form class="brief-form" id="briefForm">
         <!-- 1. Загальна інформація -->
-
         <section class="form-section" id="section-general">
           <h2>1. Загальна інформація</h2>
 
           <div class="form-row">
-            <label for="managerName">Ім'я Прізвище менеджера *</label>
+            <label for="managerName"
+              >Ім'я Прізвище менеджера <span class="req">*</span></label
+            >
             <input
               id="managerName"
               name="managerName"
               type="text"
               placeholder="Ім'я Прізвище"
-              required
             />
           </div>
 
           <div class="form-row">
-            <label for="managerEmail">Email менеджера *</label>
+            <label for="managerEmail"
+              >Email менеджера <span class="req">*</span></label
+            >
             <input
               id="managerEmail"
               name="managerEmail"
               type="email"
               placeholder="name@adsapience.com"
-              required
             />
           </div>
 
           <div class="form-row">
-            <label for="clientName">Клієнт *</label>
+            <label for="clientName">Клієнт <span class="req">*</span></label>
             <input
               id="clientName"
               name="clientName"
               type="text"
               placeholder="Назва клієнта"
-              required
             />
           </div>
 
           <div class="form-row">
-            <label for="projectName">Назва та номер проєкту *</label>
+            <label for="projectName"
+              >Назва та номер проєкту <span class="req">*</span></label
+            >
             <input
               id="projectName"
               name="projectName"
               type="text"
               placeholder="Назва проєкту"
-              required
             />
           </div>
+
           <div class="choice-card">
             <div class="form-row">
-              <label>Який документ потрібно підготувати? *</label>
+              <label
+                >Який документ потрібно підготувати?
+                <span class="req">*</span></label
+              >
 
               <div class="radio-group">
                 <label>
-                  <input
-                    type="radio"
-                    name="documentType"
-                    value="Договір"
-                    required
-                  />
+                  <input type="radio" name="documentType" value="Договір" />
                   Договір
                 </label>
 
@@ -112,8 +112,11 @@
                 </label>
               </div>
             </div>
+
             <div class="form-row hidden" id="documentOtherRow">
-              <label for="documentOther">Вкажіть інший тип документа</label>
+              <label for="documentOther"
+                >Вкажіть інший тип документа <span class="req">*</span></label
+              >
               <input
                 id="documentOther"
                 name="documentOther"
@@ -125,7 +128,10 @@
 
           <div class="choice-card">
             <div class="form-row">
-              <label>Юридична особа зі сторони Adsapience *</label>
+              <label
+                >Юридична особа зі сторони Adsapience
+                <span class="req">*</span></label
+              >
 
               <div class="radio-group">
                 <label>
@@ -133,7 +139,6 @@
                     type="radio"
                     name="legalEntity"
                     value="ТОВ «ТОТАЛ МАРКЕТИНГ ЕДЖЕНСІ»"
-                    required
                   />
                   ТОВ «ТОТАЛ МАРКЕТИНГ ЕДЖЕНСІ»
                 </label>
@@ -178,7 +183,9 @@
             </div>
 
             <div class="form-row hidden" id="legalOtherRow">
-              <label for="legalOther">Інша юридична особа</label>
+              <label for="legalOther"
+                >Інша юридична особа <span class="req">*</span></label
+              >
               <input
                 id="legalOther"
                 name="legalOther"
@@ -195,22 +202,20 @@
 
           <div class="form-row">
             <label for="contractorName"
-              >Повна юридична назва підрядника / ПІБ ФОП *</label
+              >Повна юридична назва підрядника / ПІБ ФОП
+              <span class="req">*</span></label
             >
-            <input
-              id="contractorName"
-              name="contractorName"
-              type="text"
-              required
-            />
+            <input id="contractorName" name="contractorName" type="text" />
           </div>
 
           <div class="form-row">
-            <label>Чи є підрядник платником ПДВ? *</label>
+            <label
+              >Чи є підрядник платником ПДВ? <span class="req">*</span></label
+            >
 
             <div class="radio-group horizontal">
               <label>
-                <input type="radio" name="contractorVat" value="Так" required />
+                <input type="radio" name="contractorVat" value="Так" />
                 Так
               </label>
 
@@ -223,59 +228,49 @@
 
           <div class="form-row">
             <label for="worksectionLink"
-              >№ перевірки СБ *
-            </label>
-            <input
-              id="worksectionLink"
-              name="worksectionLink"
-              type="text"
-              placeholder="https://..."
-              required
-            />
+              >№ перевірки СБ <span class="req">*</span></label
+            >
+            <input id="worksectionLink" name="worksectionLink" type="text" />
           </div>
 
           <div class="form-row">
-            <label for="contractorEmail">Контактний Email підрядника *</label>
-            <input
-              id="contractorEmail"
-              name="contractorEmail"
-              type="email"
-              required
-            />
+            <label for="contractorEmail"
+              >Контактний Email підрядника <span class="req">*</span></label
+            >
+            <input id="contractorEmail" name="contractorEmail" type="email" />
           </div>
 
           <div class="form-row">
-            <label for="contractorPhone">Контактний телефон підрядника *</label>
+            <label for="contractorPhone"
+              >Контактний телефон підрядника <span class="req">*</span></label
+            >
             <input
               id="contractorPhone"
               name="contractorPhone"
               type="tel"
               placeholder="+380..."
-              required
             />
           </div>
 
           <div class="form-row">
-            <label>Чи працювали з цим підрядником раніше? *</label>
+            <label
+              >Чи працювали з цим підрядником раніше?
+              <span class="req">*</span></label
+            >
 
             <div class="radio-group horizontal">
               <label>
-                <input type="radio" name="workedBefore" value="Так" required />
+                <input type="radio" name="workedBefore" value="Так" />
                 Так
               </label>
 
               <label>
-                <input type="radio" name="workedBefore" value="Ні" required />
+                <input type="radio" name="workedBefore" value="Ні" />
                 Ні
               </label>
 
               <label>
-                <input
-                  type="radio"
-                  name="workedBefore"
-                  value="Не знаю"
-                  required
-                />
+                <input type="radio" name="workedBefore" value="Не знаю" />
                 Не знаю
               </label>
             </div>
@@ -284,6 +279,7 @@
           <div class="form-row hidden" id="workedBeforeDetailsRow">
             <label for="workedBeforeDetails">
               Номер і дата договору або останній проєкт
+              <span class="req">*</span>
             </label>
             <input
               id="workedBeforeDetails"
@@ -293,23 +289,27 @@
           </div>
 
           <div class="form-row">
-            <label>Чи підрядник працює у “Вчасно”? *</label>
+            <label
+              >Чи підрядник працює у “Вчасно”? <span class="req">*</span></label
+            >
 
             <div class="radio-group horizontal">
               <label>
-                <input type="radio" name="vchasno" value="Так" required />
+                <input type="radio" name="vchasno" value="Так" />
                 Так
               </label>
 
               <label>
-                <input type="radio" name="vchasno" value="Ні" required />
+                <input type="radio" name="vchasno" value="Ні" />
                 Ні
               </label>
             </div>
           </div>
 
           <div class="form-row hidden" id="vchasnoEmailRow">
-            <label for="vchasnoEmail">Email підрядника у Вчасно</label>
+            <label for="vchasnoEmail"
+              >Email підрядника у Вчасно <span class="req">*</span></label
+            >
             <input id="vchasnoEmail" name="vchasnoEmail" type="email" />
           </div>
         </section>
@@ -320,28 +320,23 @@
 
           <div class="form-row">
             <label for="serviceShortName"
-              >Коротка назва послуг / робіт (приклад: розробка дизайну) *</label
+              >Коротка назва послуг / робіт (приклад: розробка дизайну)
+              <span class="req">*</span></label
             >
-            <input
-              id="serviceShortName"
-              name="serviceShortName"
-              type="text"
-              required
-            />
+            <input id="serviceShortName" name="serviceShortName" type="text" />
           </div>
 
           <div class="form-row textarea-row">
             <label for="serviceDescription"
-              >Детальний опис послуг / робіт *
+              >Детальний опис послуг / робіт <span class="req">*</span>
               <span class="hint">
-                ( Опишіть простими словами, що саме робить підрядник, який
+                (Опишіть простими словами, що саме робить підрядник, який
                 результат має передати, у яких форматах, обсягах або кількості)
               </span>
             </label>
             <textarea
               id="serviceDescription"
               name="serviceDescription"
-              required
             ></textarea>
           </div>
         </section>
@@ -352,17 +347,13 @@
 
           <div class="form-row textarea-row">
             <label for="serviceExtation"
-              >Як відображені послуги з клієнтом
+              >Як відображені послуги з клієнтом <span class="req">*</span>
               <span class="hint">
-                (вкажіть пункт/и з клієнтом де вказані послуги, що надаються
+                (вкажіть пункт/и з клієнтом, де вказані послуги, що надаються
                 підрядником)
               </span>
             </label>
-            <textarea
-              id="serviceExtation"
-              name="serviceExtation"
-              required
-            ></textarea>
+            <textarea id="serviceExtation" name="serviceExtation"></textarea>
           </div>
         </section>
 
@@ -371,17 +362,21 @@
           <h2>5. Строки виконання</h2>
 
           <div class="form-row">
-            <label for="startDate">Дата початку *</label>
-            <input id="startDate" name="startDate" type="date" required />
+            <label for="startDate"
+              >Дата початку <span class="req">*</span></label
+            >
+            <input id="startDate" name="startDate" type="date" />
           </div>
 
           <div class="form-row">
-            <label for="finishDate">Дата завершення *</label>
-            <input id="finishDate" name="finishDate" type="date" required />
+            <label for="finishDate"
+              >Дата завершення <span class="req">*</span></label
+            >
+            <input id="finishDate" name="finishDate" type="date" />
           </div>
 
           <div class="form-row">
-            <label>Формат виконання *</label>
+            <label>Етапи/Акти <span class="req">*</span></label>
 
             <div class="radio-group">
               <label>
@@ -389,7 +384,6 @@
                   type="radio"
                   name="timingFormat"
                   value="Один етап і один акт"
-                  required
                 />
                 Один етап і один акт
               </label>
@@ -411,7 +405,9 @@
           </div>
 
           <div class="form-row hidden" id="timingFormatOtherRow">
-            <label for="timingFormatOther">Інший формат виконання</label>
+            <label for="timingFormatOther"
+              >Інший формат виконання <span class="req">*</span></label
+            >
             <input
               id="timingFormatOther"
               name="timingFormatOther"
@@ -430,6 +426,8 @@
             </button>
           </div>
 
+          <p class="scroll-hint">← Гортайте таблицю вбік →</p>
+
           <div class="table-wrap">
             <table id="stagesTable">
               <thead>
@@ -437,7 +435,7 @@
                   <th>Етап</th>
                   <th>Що виконується</th>
                   <th>Період</th>
-                  <th>Сума</th>
+                  <th id="stageAmountHeader">Сума</th>
                   <th></th>
                 </tr>
               </thead>
@@ -481,29 +479,38 @@
           <h2>6. Вартість і порядок оплати</h2>
 
           <div class="choice-card">
-            <div class="form-row">
-              <label for="costNoVat">Загальна вартість без ПДВ *</label>
-              <input id="costNoVat" name="costNoVat" type="text" required />
-            </div>
-
-            <div class="form-row hidden" id="vatAmountRow">
-              <label for="vatAmount">ПДВ</label>
-              <input id="vatAmount" name="vatAmount" type="text" />
-            </div>
-
             <div class="form-row hidden" id="costWithVatRow">
-              <label for="costWithVat">Загальна вартість з ПДВ</label>
+              <label for="costWithVat"
+                >Загальна вартість з ПДВ <span class="req">*</span></label
+              >
               <input id="costWithVat" name="costWithVat" type="text" />
             </div>
 
             <div class="form-row">
-              <label for="currency">Валюта *</label>
+              <label for="costNoVat"
+                >Загальна вартість без ПДВ <span class="req">*</span></label
+              >
+              <input id="costNoVat" name="costNoVat" type="text" />
+            </div>
+
+            <div class="form-row hidden" id="vatAmountRow">
+              <label for="vatAmount">ПДВ <span class="req">*</span></label>
+              <input
+                id="vatAmount"
+                name="vatAmount"
+                type="text"
+                readonly
+                placeholder="Авто"
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="currency">Валюта <span class="req">*</span></label>
               <input
                 id="currency"
                 name="currency"
                 type="text"
                 placeholder="UAH, USD, EUR"
-                required
               />
             </div>
           </div>
@@ -519,12 +526,14 @@
             </button>
           </div>
 
+          <p class="scroll-hint">← Гортайте таблицю вбік →</p>
+
           <div class="table-wrap">
             <table id="paymentsTable">
               <thead>
                 <tr>
                   <th>№</th>
-                  <th>Сума</th>
+                  <th id="paymentAmountHeader">Сума</th>
                   <th>Дата</th>
                   <th>Коментар</th>
                   <th></th>
@@ -566,7 +575,10 @@
           <h2>7. Інтелектуальна власність</h2>
 
           <div class="form-row checkbox-row">
-            <label>Чи створює підрядник щось із наведеного нижче?</label>
+            <label
+              >Чи створює підрядник щось із наведеного нижче?
+              <span class="req">*</span></label
+            >
 
             <div class="checkbox-grid">
               <label
@@ -623,15 +635,19 @@
               >
             </div>
           </div>
+
           <div id="ipDetailsBlock" class="hidden">
             <div class="form-row textarea-row">
-              <label for="ipDescription">Якщо так, що саме створюється?</label>
+              <label for="ipDescription"
+                >Якщо так, що саме створюється? <span class="req">*</span></label
+              >
               <textarea id="ipDescription" name="ipDescription"></textarea>
             </div>
 
             <div class="form-row textarea-row">
               <label for="usageRestrictions"
-                >Чи є обмеження щодо використання результату?</label
+                >Чи є обмеження щодо використання результату?
+                <span class="req">*</span></label
               >
               <textarea
                 id="usageRestrictions"
@@ -649,7 +665,7 @@
           <div class="form-row textarea-row">
             <label for="riskConditions">
               Будь-які домовленості з підрядником, які обов’язково потрібно
-              включити в документ *
+              включити в документ <span class="req">*</span>
             </label>
 
             <textarea id="riskConditions" name="riskConditions"></textarea>
@@ -663,7 +679,7 @@
           <div class="form-row checkbox-row">
             <label>
               Чи наявний будь-який документ з підрядником, що описує або
-              деталізує послугу? *
+              деталізує послугу? <span class="req">*</span>
             </label>
 
             <div class="checkbox-grid">
@@ -708,35 +724,33 @@
 
           <div class="form-row textarea-row">
             <label for="additionalLinks"
-              >Посилання або коментарі до файлів *</label
+              >Посилання або коментарі до файлів
+              <span class="req">*</span></label
             >
             <textarea
               id="additionalLinks"
               name="additionalLinks"
               placeholder="Вставте посилання на Worksection, SharePoint, Google Drive або інші матеріали"
-              required
             ></textarea>
           </div>
         </section>
 
         <!-- ACTIONS -->
-        <!-- <div class="form-actions">
-                <button type="button" class="secondary-button" id="saveDraftBtn">
-                    Зберегти чернетку
-                </button>
+        <div class="table-actions">
+          <button type="button" class="secondary-button" id="clearDraftBtn">
+            Очистити форму
+          </button>
+        </div>
 
-                <button type="button" class="secondary-button" id="previewBtn">
-                    Переглянути бриф
-                </button>
-
-                <button type="submit" class="primary-button">
-                    Сформувати бриф
-                </button>
-            </div> -->
         <div class="form-actions">
           <button type="button" class="primary-button" id="downloadWordBtn">
             Завантажити Word
           </button>
+
+          <p class="download-note">
+            Якщо вам потрібно буде внести правки в збережений документ,
+            перезбережіть його перед цим у форматі Document Word (*.docx)
+          </p>
         </div>
       </form>
     </main>
